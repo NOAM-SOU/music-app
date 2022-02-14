@@ -6,6 +6,11 @@ import Home from "./views/Home/Home";
 export default function App() {
   console.log(Home);
   return (
+    // <div className="App">
+    //   <div className="top-ar-div">
+    //     <Header />
+    //   </div>
+    // </div>
     <>
       <Router>
         <Routes>
