@@ -1,10 +1,24 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas:
+    "nav-bar main-view buddy-feed"
+    "now-playing-bar now-playing-bar now-playing-bar";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+.top-ar-div {
+  grid-area: main-view;
+  height: 64px;
+  min-width: 0;
   pointer-events: none;
+  z-index: 2;
+  border: 1px rgb(201, 28, 28) solid;
 }
 
 @media (prefers-reduced-motion: no-preference) {
