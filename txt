@@ -7,3 +7,8 @@ function Home () {
 }
 
 export default Home
+
+   // <div className="home-div-first">
+    //   <Header />
+    //   {/* <div className="nav-manu-music"></div> */}
+    // </div>

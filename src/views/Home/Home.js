@@ -1,11 +1,13 @@
+import Nav from "../../components/Nav/Nav";
 import "./Home.css";
 
 export default function Home() {
   return (
     <div className="home-div-first">
-      <div className="top-ar-div">
-        <h1>hello</h1>
+      <div className="navbar-div">
+        <Nav />
       </div>
+      <div className="content-music"></div>
     </div>
   );
 }
