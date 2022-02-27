@@ -36,16 +36,6 @@ export default function Nav() {
           </Link>
         </li>
         <br />
-        {/* <li>
-          <Link className="link-first-nav" to="/users">
-            Login
-          </Link>
-        </li>
-        <li>
-          <Link className="link-first-nav" to="/users">
-            Sign up
-          </Link>
-        </li> */}
       </ul>
     </nav>
   );

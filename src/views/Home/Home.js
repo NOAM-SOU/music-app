@@ -1,5 +1,7 @@
 import Nav from "../../components/Nav/Nav";
 import NavList from "../../components/NavList/NavList";
+import NavUser from "../../components/NavUser/NavUser";
+import PlaylistsCards from "../../components/PlaylistsCards/PlaylistsCards";
 import "./Home.css";
 
 export default function Home() {
@@ -8,8 +10,13 @@ export default function Home() {
       <div className="navbar-div">
         <Nav />
         <NavList />
+        <NavUser />
       </div>
-      <div className="content-music"></div>
+      <div className="content-music">
+        <div className="div-scroller-content">
+          <PlaylistsCards />
+        </div>
+      </div>
     </div>
   );
 }

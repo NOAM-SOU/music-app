@@ -1,0 +1,13 @@
+.div-playlists-cards {
+  width: 100%;
+  border: 1px red solid;
+}
+
+.list-content-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-scroller-palylists {
+  overflow: scroll;
+}

@@ -18,3 +18,7 @@
 
   /* background-color: aquamarine; */
 }
+
+.div-scroller-content {
+  overflow: scroll;
+}

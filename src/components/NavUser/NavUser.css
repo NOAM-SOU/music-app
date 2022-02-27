@@ -1,35 +1,30 @@
-.first-nav {
+.list-nav-user {
   width: 100%;
-  height: 30%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   /* border: 1px red solid; */
 }
 
-.list-father-ul {
+.list-bro-ul {
   list-style: none;
   line-height: 3;
   margin-top: 5%;
 }
 
-.link-first-nav {
+.link-user-nav {
   text-decoration: none;
   font-size: large;
   color: rgb(117, 117, 117);
   padding-left: 5%;
 }
 
-.link-first-nav:hover {
+.link-user-nav:hover {
   color: white;
   cursor: pointer;
 }
 
-.icon-first-nav {
+.icon-user-nav {
   color: rgb(117, 117, 117);
-}
-
-#line-nav {
-  background-color: rgb(117, 117, 117);
-  background-color: rgb(117, 117, 117);
 }
