@@ -13,9 +13,7 @@ export default function Home() {
         <NavUser />
       </div>
       <div className="content-music">
-        <div className="div-scroller-content">
-          <PlaylistsCards />
-        </div>
+        {/* <div className="div-scroller-content"><PlaylistsCards /></div> */}
       </div>
     </div>
   );
