@@ -18,20 +18,20 @@ export default function Nav() {
         </li>
         <li>
           <BsSearch className="icon-first-nav" />
-          <Link className="link-first-nav" to="/about">
+          <Link className="link-first-nav" to="/search">
             Search
           </Link>
         </li>
 
         <li>
           <CgAddR className="icon-first-nav" />
-          <Link className="link-first-nav" to="/users">
+          <Link className="link-first-nav" to="/newplaylist">
             New playlist
           </Link>
         </li>
         <li>
           <MdFavorite className="icon-first-nav" />
-          <Link className="link-first-nav" to="/users">
+          <Link className="link-first-nav" to="/favorite">
             My favorite songs
           </Link>
         </li>

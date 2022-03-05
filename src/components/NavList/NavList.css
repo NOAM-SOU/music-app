@@ -26,12 +26,7 @@
 }
 
 .div-scroller {
-  /* width: 2%; */
-  /* overflow-y: scroll;/} */
-  /* background-color: #eaeaea; */
-  /* display: block; */
-  /* height: 200px; */
-  overflow-y: scroll;
-  /* text-align: center; */
-  /* width: 200px; */
+}
+
+#style-1::-webkit-scrollbar-track {
 }

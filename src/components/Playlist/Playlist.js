@@ -12,6 +12,7 @@ export default function Playlist(props) {
           />
         </div>
         <div className="playlist-details">{props.name}</div>
+        {/* <div className="playlist-details">jknjj jk </div> */}
       </div>
     </div>
   );

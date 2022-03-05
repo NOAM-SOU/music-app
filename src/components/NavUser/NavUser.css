@@ -28,3 +28,10 @@
 .icon-user-nav {
   color: rgb(117, 117, 117);
 }
+
+#log-out-link {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(117, 117, 117);
+  /* padding-left: %; */
+}

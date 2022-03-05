@@ -1,11 +1,15 @@
 .div-playlists-cards {
-  width: 100%;
+  width: 80%;
   border: 1px red solid;
+  display: flex;
+  justify-content: center;
 }
 
 .list-content-ul {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
+  margin-top: 4%;
 }
 
 .div-scroller-palylists {

@@ -36,75 +36,13 @@ export default function PlaylistsCards() {
     {
       name: "My songs",
     },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
-    {
-      name: "My songs",
-    },
   ];
   return (
-    <div className="div-playlists-cards">
-      <ul className="list-content-ul">
-        {playlists.map((p) => (
-          <Playlist name={p.name} />
-        ))}
-      </ul>
-      {/* </div> */}
-    </div>
+    // <div className="div-playlists-cards">
+    <ul className="list-content-ul">
+      {playlists.map((p) => (
+        <Playlist name={p.name} />
+      ))}
+    </ul>
   );
 }

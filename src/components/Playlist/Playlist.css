@@ -1,29 +1,47 @@
 .playlist-card-unic {
-  /* width: 100%; */
-  /* height: 20%; */
-  /* border: 1px solid red; */
-  justify-content: center;
-  text-align: center;
+  width: 20%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  flex: 1 15%;
+  border-radius: 5%;
+  background-color: rgb(37, 35, 35);
+  align-items: center;
+  margin: 1%;
 }
 
 .playlist-car-de {
-  /* border: 1px solid rgb(179, 255, 0); */
-  width: 100%;
-  height: 100%;
+  background-color: rgb(20, 19, 19);
+
+  border-radius: 5%;
+  width: 95%;
+  height: 95%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-car-de:hover {
+  cursor: pointer;
+  background-color: rgb(83, 81, 81);
 }
 
 .div-img-playlist {
-  /* width: 100%;
-  height: 60%; */
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .img-playlist {
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 
 .playlist-details {
-  color: azure;
-  width: 100%;
-  height: 40%;
+  margin-top: 8%;
+  color: white;
 }

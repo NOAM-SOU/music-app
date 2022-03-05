@@ -1,0 +1,71 @@
+.div-form-newplaylist {
+  width: 85%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(128, 51, 0); */
+}
+
+.div-form-newplaylist-1 {
+  border: 1px solid green;
+  width: 40%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-form-newplaylist {
+  color: #aa72d2;
+  font-size: 2em;
+  font-family: "Carter One", cursive;
+  height: 20%;
+  margin-top: 5%;
+}
+
+.form-newplaylist {
+  width: 100%;
+  height: 80%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-newplaylist {
+  width: 80%;
+  height: 15%;
+  border-radius: 15px;
+}
+
+.div-btn-newplaylist {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  height: 30%;
+  /* border: 1px solid rgb(204, 124, 124); */
+  /* justify-content: center; */
+}
+
+.btn-newplaylist {
+  width: 30%;
+  height: 50%;
+  margin-top: 10%;
+  background-color: #aa72d2;
+  border-radius: 15px;
+  border: none;
+  font-family: "Carter One", cursive;
+}
+
+.btn-newplaylist-cancel {
+  width: 30%;
+  height: 50%;
+  margin-top: 10%;
+  background-color: #aa72d2;
+  border-radius: 15px;
+  border: none;
+  font-family: "Carter One", cursive;
+}
