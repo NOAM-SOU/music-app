@@ -1,0 +1,13 @@
+.player-wrapper {
+  width: 100%;
+  /* background: linear-gradient(
+      90deg,
+      rgb(171, 199, 95) 0%,
+      rgb(239, 252, 216) 100%
+    ); */
+}
+
+.react-player {
+  margin-top: 10%;
+  margin-left: 25%;
+}

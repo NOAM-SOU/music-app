@@ -16,6 +16,11 @@
 .link-first-nav {
   text-decoration: none;
   font-size: large;
+  color: #aa72d2;
+  /* font-family: "Carter One", cursive; */
+  /* font-family: "Carter One", cursive;
+  font-family: "Patrick Hand", cursive; */
+
   color: rgb(117, 117, 117);
   padding-left: 5%;
 }
@@ -26,7 +31,8 @@
 }
 
 .icon-first-nav {
-  color: rgb(117, 117, 117);
+  /* color: rgb(117, 117, 117); */
+  color: #aa72d2;
 }
 
 #line-nav {

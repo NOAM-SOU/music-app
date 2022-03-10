@@ -16,7 +16,11 @@
 .link-user-nav {
   text-decoration: none;
   font-size: large;
-  color: rgb(117, 117, 117);
+  /* color: rgb(117, 117, 117); */
+  color: #aa72d2;
+  /* font-family: "Carter One", cursive; */
+  font-family: "Carter One", cursive;
+  font-family: "Patrick Hand", cursive;
   padding-left: 5%;
 }
 
@@ -26,12 +30,22 @@
 }
 
 .icon-user-nav {
-  color: rgb(117, 117, 117);
+  /* color: rgb(117, 117, 117);
+   */
+  color: #aa72d2;
 }
 
 #log-out-link {
   text-decoration: none;
   font-size: large;
   color: rgb(117, 117, 117);
-  /* padding-left: %; */
+  /* color: #aa72d2; */
+  /* font-family: "Carter One", cursive; */
+  /* font-family: "Carter One", cursive;
+  font-family: "Patrick Hand", cursive; */
+}
+
+#log-out-link:hover {
+  color: white;
+  cursor: pointer;
 }

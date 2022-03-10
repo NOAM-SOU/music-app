@@ -62,3 +62,9 @@
   height: 15%;
   cursor: pointer;
 }
+
+#link-play-icon {
+  width: 70%;
+  cursor: pointer;
+  height: 70%;
+}

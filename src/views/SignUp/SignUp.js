@@ -1,6 +1,7 @@
 import "./SignUp.css";
 import mu from "./mu.png";
 import FormRegister from "../../components/FormRegister/FormRegister";
+
 export default function SignUp() {
   return (
     <div className="containerr-sign-up">

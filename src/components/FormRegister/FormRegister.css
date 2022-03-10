@@ -54,3 +54,9 @@
 .btn-signup:hover {
   background-color: #c798e9;
 }
+
+.error-signup {
+  color: red;
+  text-align: center;
+  font-size: smaller;
+}

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: left;
   /* border: 1px rgb(48, 185, 20) solid; */
+  border-top: white 3px;
 }
 
 .list-bro-ul {
@@ -17,6 +18,11 @@
   text-decoration: none;
   font-size: large;
   color: rgb(117, 117, 117);
+
+  /* color: #aa72d2; */
+  /* font-family: "Carter One", cursive; */
+  /* font-family: "Carter One", cursive;
+  font-family: "Patrick Hand", cursive; */
   padding-left: 5%;
 }
 
