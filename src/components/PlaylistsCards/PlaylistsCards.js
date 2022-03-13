@@ -41,7 +41,7 @@ export default function PlaylistsCards() {
     // <div className="div-playlists-cards">
     <ul className="list-content-ul">
       {playlists.map((p) => (
-        <Playlist name={p.name} />
+        <Playlist key={Math.random()} name={p.name} />
       ))}
     </ul>
   );

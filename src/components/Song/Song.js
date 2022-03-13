@@ -6,22 +6,29 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Song(props) {
+  const token = localStorage.getItem("Token");
+
   const addToFav = async () => {
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    };
     const song = {
       title: props.title,
       src: props.id,
       provider: "Youtube",
+      img: props.img,
     };
-
     const res = await axios.post(
-      "http://localhost:5001/songs/add/favorite",
-      song
+      "http://localhost:5001/songs/addtofavorite",
+      song,
+      { headers: headers }
     );
     console.log(res);
   };
 
   return (
-    <li className="song-card">
+    <li key={props.id} className="song-card">
       <div className="div-song-img">
         <img id="img-song" src={props.img} alt="img" />
       </div>
@@ -33,7 +40,7 @@ export default function Song(props) {
           <AiFillPlayCircle id="play-icon" />
         </Link>
 
-        <FcLikePlaceholder id="like-icon" />
+        <FcLikePlaceholder id="like-icon" onClick={addToFav} />
         <MdAdd id="add-icon" />
       </div>
     </li>

@@ -1,64 +1,39 @@
 import "./FavoriteSongs.css";
 
 import Song from "../../components/Song/Song";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function FavoriteSongs() {
-  const fav = [
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-    {
-      title: "hello",
-      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
-    },
-  ];
+  const [fav, setFav] = useState([]);
+  const token = localStorage.getItem("Token");
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: `Bearer ${token}`,
+  };
+
+  const favSongs = async () => {
+    const options = {
+      method: "GET",
+      url: "http://localhost:5001/songs/getfavorite",
+      headers: headers,
+    };
+    const res = await axios(options);
+    console.log(res.data);
+    setFav(res.data);
+  };
+
+  useEffect(() => {
+    favSongs();
+    console.log(fav);
+  }, []);
+
   return (
     <div className="container-favorite">
       <div className="header-favoritesongs">My Favorite Songs</div>
       <ul className="list-favorite-songs">
         {fav.map((s) => (
-          <Song title={s.title} img={s.img} />
+          <Song title={s.title} img={s.img} id={s.src} />
         ))}
       </ul>
     </div>

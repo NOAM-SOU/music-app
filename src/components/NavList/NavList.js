@@ -18,7 +18,7 @@ export default function NavList() {
       {/* <div className="div-scroller"> */}
       <ul className="list-bro-ul">
         {playlists.map((p) => (
-          <li>
+          <li key={Math.random()}>
             <Link className="link-list-nav" to="/">
               {p.name}
             </Link>
