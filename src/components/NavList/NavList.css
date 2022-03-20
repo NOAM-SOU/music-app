@@ -32,6 +32,7 @@
 }
 
 .div-scroller {
+  overflow: scroll;
 }
 
 #style-1::-webkit-scrollbar-track {
